@@ -1,0 +1,7 @@
+@use 'variables' as *;
+
+@mixin mobile-down(){
+    @media (max-width : $mobile-down){
+        @content;
+    }
+}
