@@ -101,6 +101,11 @@ body {
 .container .user-col .user-info .user-name .name {
   font-weight: 300;
 }
+@media (max-width: 768px) {
+  .container .user-col .user-info .user-name .name {
+    font-size: 1.5rem;
+  }
+}
 .container .user-col .user-avatar {
   border: 3px solid white;
   border-radius: 50%;
@@ -238,6 +243,11 @@ body {
           align-items: center;
   margin-bottom: 1.5rem;
 }
+@media (max-width: 768px) {
+  .container .col .inside .header {
+    margin-bottom: 0;
+  }
+}
 .container .col .inside .header .options {
   font-weight: bold;
   letter-spacing: 3px;
@@ -247,6 +257,11 @@ body {
   font-weight: 300;
   font-size: 2.75rem;
   margin-bottom: 0.5rem;
+}
+@media (max-width: 768px) {
+  .container .col .inside .current-hours {
+    margin-bottom: 0;
+  }
 }
 .container .col .inside .last-week {
   font-weight: 300;

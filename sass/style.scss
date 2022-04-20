@@ -72,6 +72,9 @@ body {
                 }
                 .name{
                     font-weight: 300;
+                    @include mobile-down{
+                        font-size : 1.5rem;
+                    }
                 }
             }
         }
@@ -173,6 +176,7 @@ body {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+
             }
             &:hover{
                 background-color: $blue-hover;
@@ -182,6 +186,9 @@ body {
                 justify-content : space-between;
                 align-items: center;
                 margin-bottom : 1.5rem;
+                @include mobile-down{
+                    margin-bottom: 0;
+                }
                 .options{
                     font-weight: bold;
                     letter-spacing: 3px;
@@ -193,6 +200,9 @@ body {
                     font-weight : 300;
                     font-size : 2.75rem;
                     margin-bottom : .5rem;
+                    @include mobile-down{
+                        margin-bottom: 0;
+                    }
             }
             .last-week{
                 font-weight : 300;
