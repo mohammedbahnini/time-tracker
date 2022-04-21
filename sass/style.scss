@@ -173,9 +173,12 @@ body {
             padding: 2rem;
             cursor: pointer;
             .content{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+                @include mobile-down{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                
 
             }
             &:hover{
@@ -187,7 +190,7 @@ body {
                 align-items: center;
                 margin-bottom : 1.5rem;
                 @include mobile-down{
-                    margin-bottom: 0;
+                    margin-bottom: .5em;
                 }
                 .options{
                     font-weight: bold;
@@ -202,6 +205,7 @@ body {
                     margin-bottom : .5rem;
                     @include mobile-down{
                         margin-bottom: 0;
+                        font-size : 2rem;
                     }
             }
             .last-week{

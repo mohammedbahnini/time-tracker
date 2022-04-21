@@ -144,7 +144,7 @@ body {
   font-weight: 300;
   margin-bottom: 1rem;
   cursor: pointer;
-  color: rgba(255, 255, 255, 0.767);
+  color: rgba(255, 255, 255, 0.36);
 }
 @media (max-width: 768px) {
   .container .cat .cat-list .cat-item {
@@ -217,16 +217,18 @@ body {
   padding: 2rem;
   cursor: pointer;
 }
-.container .col .inside .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media (max-width: 768px) {
+  .container .col .inside .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 .container .col .inside:hover {
   background-color: #34397b;
@@ -245,7 +247,7 @@ body {
 }
 @media (max-width: 768px) {
   .container .col .inside .header {
-    margin-bottom: 0;
+    margin-bottom: 0.5em;
   }
 }
 .container .col .inside .header .options {
@@ -261,12 +263,13 @@ body {
 @media (max-width: 768px) {
   .container .col .inside .current-hours {
     margin-bottom: 0;
+    font-size: 2rem;
   }
 }
 .container .col .inside .last-week {
   font-weight: 300;
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.767);
+  color: rgba(255, 255, 255, 0.36);
 }
 .container .col .inside .last-week:hover {
   color: white;
